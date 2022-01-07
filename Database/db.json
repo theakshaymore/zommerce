@@ -1,0 +1,78 @@
+{
+  "clothes": [
+    {
+      "id": 1,
+      "name": "Summer Collection",
+      "price": 299,
+      "img": "https://images.pexels.com/photos/1100790/pexels-photo-1100790.jpeg?auto=compress"
+    },
+    {
+      "id": 2,
+      "name": "Girl Tshirt",
+      "price": 200,
+      "img": "https://images.pexels.com/photos/4495705/pexels-photo-4495705.jpeg?auto=compress"
+    },
+    {
+      "id": 3,
+      "name": "Rounded T-shirt",
+      "price": 140,
+      "img": "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress"
+    },
+    {
+      "id": 4,
+      "name": "Shoes",
+      "price": 400,
+      "img": "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress"
+    },
+    {
+      "id": 5,
+      "name": "Girls Collection",
+      "price": 199,
+      "img": "https://images.pexels.com/photos/1937336/pexels-photo-1937336.jpeg?auto=compress"
+    },
+    {
+      "id": 6,
+      "name": "V-Neck collection",
+      "price": 100,
+      "img": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress"
+    },
+    {
+      "id": 7,
+      "name": "coding tshirt",
+      "price": 100,
+      "img": "https://web.learncodeonline.in/static/g4-755585d7d7711189bc6adc7c3225088a.jpg"
+    },
+    {
+      "id": 8,
+      "name": "coding tshirt",
+      "price": 100,
+      "img": "https://web.learncodeonline.in/static/g4-755585d7d7711189bc6adc7c3225088a.jpg"
+    },
+    {
+      "id": 9,
+      "name": "coding tshirt",
+      "price": 100,
+      "img": "https://web.learncodeonline.in/static/g4-755585d7d7711189bc6adc7c3225088a.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "name": "Girl Tshirt",
+      "price": 200,
+      "img": "https://images.pexels.com/photos/4495705/pexels-photo-4495705.jpeg?auto=compress"
+    },
+    {
+      "id": 3,
+      "name": "Rounded T-shirt",
+      "price": 140,
+      "img": "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress"
+    },
+    {
+      "id": 5,
+      "name": "Girls Collection",
+      "price": 199,
+      "img": "https://images.pexels.com/photos/1937336/pexels-photo-1937336.jpeg?auto=compress"
+    }
+  ]
+}
