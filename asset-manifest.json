@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zommerce/static/css/main.48ae2809.css",
+    "main.js": "/zommerce/static/js/main.b0776b27.js",
+    "index.html": "/zommerce/index.html",
+    "main.48ae2809.css.map": "/zommerce/static/css/main.48ae2809.css.map",
+    "main.b0776b27.js.map": "/zommerce/static/js/main.b0776b27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48ae2809.css",
+    "static/js/main.b0776b27.js"
+  ]
+}
