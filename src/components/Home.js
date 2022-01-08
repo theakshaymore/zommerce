@@ -4,7 +4,9 @@ import ProductList from "./ProductList";
 import Trending from "./Trending";
 
 function Home() {
-  const { data, isPending, error } = useFetch("http://localhost:8000/clothes/");
+  const { data, isPending, error } = useFetch(
+    "https://my-json-server.typicode.com/theakshaymore/zommerce-server/clothes/"
+  );
 
   return (
     <div className="home">

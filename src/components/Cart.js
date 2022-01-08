@@ -4,7 +4,9 @@ import { Redirect, Link } from "react-router-dom";
 
 function Cart() {
   // TODO: COME BACK HERE FOR DYNAMIC DATA #ERR2
-  const { data, isPending, error } = useFetch("http://localhost:8000/cart/");
+  const { data, isPending, error } = useFetch(
+    "https://my-json-server.typicode.com/theakshaymore/zommerce-server/cart/"
+  );
 
   // STATIC DATA
   const [dummy, setDummy] = useState([

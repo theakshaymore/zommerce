@@ -9,15 +9,19 @@ function CardDetail() {
   const history = useHistory();
 
   const { data, isPending, error } = useFetch(
-    "http://localhost:8000/clothes/" + id
+    "https://my-json-server.typicode.com/theakshaymore/zommerce-server/clothes/" +
+      id
   );
 
   const addToCart = () => {
-    fetch("http://localhost:8000/cart/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    }).then(() => {
+    fetch(
+      "https://my-json-server.typicode.com/theakshaymore/zommerce-server/cart/",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    ).then(() => {
       console.log("new data added");
       // setIsPending(false);
       // history.push("/");
