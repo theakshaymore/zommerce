@@ -73,6 +73,12 @@
       "name": "Girls Collection",
       "price": 199,
       "img": "https://images.pexels.com/photos/1937336/pexels-photo-1937336.jpeg?auto=compress"
+    },
+    {
+      "id": 1,
+      "name": "Summer Collection",
+      "price": 299,
+      "img": "https://images.pexels.com/photos/1100790/pexels-photo-1100790.jpeg?auto=compress"
     }
   ]
 }

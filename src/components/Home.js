@@ -4,19 +4,15 @@ import ProductList from "./ProductList";
 import Trending from "./Trending";
 
 function Home() {
-  const { data, isPending, error } = useFetch(
-    "https://my-json-server.typicode.com/theakshaymore/zommerce-server/clothes/"
-  );
+  const { data, isPending, error } = useFetch("http://localhost:8000/clothes/");
 
   return (
     <div className="home">
-      {/* Navbar */}
-      {/* Trending */}
       <Trending />
       {/* List of products */}
       {isPending && (
-        <div>
-          <h1>Loading.......</h1>
+        <div className="container">
+          <h1 className="text-center mt-3">Loading.......</h1>
         </div>
       )}
       {error && (

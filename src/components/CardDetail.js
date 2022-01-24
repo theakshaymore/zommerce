@@ -9,25 +9,22 @@ function CardDetail() {
   const history = useHistory();
 
   const { data, isPending, error } = useFetch(
-    "https://my-json-server.typicode.com/theakshaymore/zommerce-server/clothes/" +
-      id
+    "http://localhost:8000/clothes/" + id
   );
 
   const addToCart = () => {
-    fetch(
-      "https://my-json-server.typicode.com/theakshaymore/zommerce-server/cart/",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    ).then(() => {
-      console.log("new data added");
-      // setIsPending(false);
-      // history.push("/");
-    });
-    setAddedbtn(true);
-    console.log("added");
+    fetch("http://localhost:8000/cart/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then(() => {
+        setAddedbtn(true);
+        console.log("new data added");
+        // setIsPending(false);
+        // history.push("/");
+      })
+      .catch((err) => console.log(err));
   };
 
   const showAddToCart = () => {
@@ -45,7 +42,7 @@ function CardDetail() {
   const showAddedButton = () => {
     return (
       <button
-        onClick={addToCart}
+        // onClick={addToCart}
         className="col-12 btn btn-lg rounded m-1 btn-success"
       >
         <span>
@@ -59,8 +56,8 @@ function CardDetail() {
   return (
     <div className="carddetail">
       {isPending && (
-        <div>
-          <h1>Loading.......</h1>
+        <div className="container">
+          <h1 className="text-center mt-5">Loading.......</h1>
         </div>
       )}
       {error && (
@@ -98,7 +95,7 @@ function CardDetail() {
                 <p className="p-1">
                   <strong>
                     <i className="fas fa-rupee-sign" />
-                    {data ? data.price : "Price"}
+                    {data ? data.price : "100"}
                   </strong>
                 </p>
                 <p className="">

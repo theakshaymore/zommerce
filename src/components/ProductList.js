@@ -4,21 +4,18 @@ import Card from "./Card";
 
 function ProductList({ data }) {
   const addToCart = (item) => {
-    fetch(
-      "https://my-json-server.typicode.com/theakshaymore/zommerce-server/cart/",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(item),
-      }
-    ).then(() => {
+    fetch("http://localhost:8000/cart/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(item),
+    }).then(() => {
       console.log("new data added");
     });
   };
   return (
-    <div className="container mt-5 pt-5 productlist">
+    <div className="container mt-5 pt-5 productlist" id="godown">
       <h4 class="text-center mb-4">
         <strong>Our Products</strong>
       </h4>

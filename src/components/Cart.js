@@ -4,10 +4,7 @@ import { Redirect, Link } from "react-router-dom";
 
 function Cart() {
   // TODO: COME BACK HERE FOR DYNAMIC DATA #ERR2
-  const { data, isPending, error } = useFetch(
-    "https://my-json-server.typicode.com/theakshaymore/zommerce-server/cart/"
-  );
-
+  const { data, isPending, error } = useFetch("http://localhost:8000/cart/");
   // STATIC DATA
   const [dummy, setDummy] = useState([
     {
@@ -29,8 +26,6 @@ function Cart() {
       img: "https://images.pexels.com/photos/1937336/pexels-photo-1937336.jpeg?auto=compress",
     },
   ]);
-
-  console.log(dummy);
 
   const getAmount = () => {
     let amount = 0;
