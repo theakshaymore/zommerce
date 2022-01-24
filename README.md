@@ -13,6 +13,8 @@ E-commerce web application built using ReactJS and JSON-Server
     - this is will start json server in your browser
   - then run “npm start” command
 
+## Snapshots
+
 ![mindmap](./zommerce-1.png)
 ![mindmap](./zommerce-2.png)
 ![mindmap](./zommerce-3.png)
